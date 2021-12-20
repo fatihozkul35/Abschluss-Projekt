@@ -20,16 +20,16 @@ content = "Welcome... our company..." # for sending Email
 mail = smtplib.SMTP("smtp.gmail.com", 587) # for sending Email
 mail.ehlo() # for sending Email
 mail.starttls() # for sending Email
-mail.login("fatihozkul3541@gmail.com", "password") # for sending Email
+mail.login("your email address", "your email password") # for sending Email
 
 while True:
 
     test1 = python_test.cell(counter,5)
 
 
-    if test1.value and not test1 in E_Mail:
+    if test1.value and not test1 in E_Mail: # test1.value =  Email address that you want to send a Email
 
-        mail.sendmail("fatihozkul3541@gmail.com",f"{test1.value}",content) # for sending Email
+        mail.sendmail("your email address",f"{test1.value}",content) # for sending Email
 
         print(f"Ailemize {test1.value} katildi...")
 
