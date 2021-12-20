@@ -31,12 +31,12 @@ while True:
 
         mail.sendmail("your email address",f"{test1.value}",content) # for sending Email
 
-        print(f"Ailemize {test1.value} katildi...")
+        print(f"{test1.value} joined our family...")
 
         E_Mail.append(test1.value)
 
         counter += 1
 
     else:
-        print("Yeni giris yoktur!!!")
+        print("No new entries!!!")
     time.sleep(10)
